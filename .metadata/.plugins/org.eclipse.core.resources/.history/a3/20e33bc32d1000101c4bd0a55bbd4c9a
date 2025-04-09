@@ -1,0 +1,16 @@
+package com.carro.service.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/carro")
+public class CarroController {
+
+	public CarroController() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

@@ -1,0 +1,49 @@
+package com.usuario.service.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.usuario.service.entity.Usuario;
+import com.usuario.service.repository.UsuarioRepository;
+
+@Service
+public class UsuarioService {
+
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+	
+	
+	public UsuarioService() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public  List<Usuario>getAll(){
+		return usuarioRepository.findAll();
+	}
+	
+	public Usuario getUsuarioById(int id) {
+		return usuarioRepository.findById(id).orElse(null);
+	}
+	
+	public Usuario save(Usuario usuario) {
+		Usuario nuevoUsuario = usuarioRepository.save(usuario);
+		return nuevoUsuario;
+	}
+	
+	public Usuario actualizar(int id,Usuario usuarioDetalles) {
+		Usuario usuario = usuarioRepository.findById(id).orElse(null);
+		usuario.setNombre(usuarioDetalles.getNombre());
+		usuario.setEmail(usuarioDetalles.getEmail());
+		Usuario actulaizadoUsuario = usuarioRepository.save(usuario);
+		return actulaizadoUsuario;
+	}
+	
+	public void eliminar(int id) {
+		//usuarioRepository.findById(id);
+		usuarioRepository.deleteById(id);
+	}
+	
+
+}

@@ -1,0 +1,9 @@
+package com.moto.service.controller;
+
+public class MotoController {
+
+	public MotoController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

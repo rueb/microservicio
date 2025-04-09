@@ -1,0 +1,8 @@
+package com.usuario.service.feignclients;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name = "carro-service", url="localhost:8002")
+public interface CarroFeignClient {
+
+}

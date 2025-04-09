@@ -1,0 +1,13 @@
+package com.usuario.service.models;
+
+public class Moto {
+
+	private String marca;
+	private String modelo;
+	
+	
+	public Moto() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.carro.service.entity;
+
+public class Carro {
+
+	public Carro() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

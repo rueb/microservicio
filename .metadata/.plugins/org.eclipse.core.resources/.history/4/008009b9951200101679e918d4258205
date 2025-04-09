@@ -1,0 +1,21 @@
+package com.moto.service.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.moto.service.repository.MotoRepository;
+
+public class MotoService {
+
+	@Autowired
+	private MotoRepository motoRepository;
+	public MotoService() {	
+		
+	}
+	
+	public List<Moto>getAll(){
+		retur motoRe
+	}
+
+}
