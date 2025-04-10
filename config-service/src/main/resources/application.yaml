@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  cloud:     
+   config:
+      server:
+        git:
+          default-label: config-server
+          uri: https://github.com/rueb/microservicio.git
+          search-paths: config-data
+  application:
+    name: config-service
+    
+    # git remote add origin https://github.com/rueb/microservicio.git
+    # git checkout config-server
+    # https://www.youtube.com/watch?v=icTg6iTqpUk
+    # 2:33
+

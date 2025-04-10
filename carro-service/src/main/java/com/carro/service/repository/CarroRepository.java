@@ -7,10 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import com.carro.service.entity.Carro;
 
-import jakarta.persistence.Entity;
 @Repository
 public interface CarroRepository extends JpaRepository<Carro, Integer>{
 	
-	List<Carro>findByUsuario(int usuarioId);
+	List<Carro>findByUsuarioId(int usuarioId);
 
 }

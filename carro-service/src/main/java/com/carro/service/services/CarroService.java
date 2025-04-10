@@ -14,10 +14,6 @@ public class CarroService {
 	@Autowired
 	private CarroRepository carroRepository;
 	
-	public CarroService() {
-		// TODO Auto-generated constructor stub
-	}
-	
 	public List<Carro>getAll(){
 		return carroRepository.findAll();
 	}
@@ -45,7 +41,7 @@ public class CarroService {
 	}
 	
 	public List<Carro>byUsuarioId(int usuarioId){
-		return carroRepository.findByUsuario(usuarioId);
+		return carroRepository.findByUsuarioId(usuarioId);
 	}
 
 }

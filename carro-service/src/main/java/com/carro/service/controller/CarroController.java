@@ -21,10 +21,6 @@ public class CarroController {
 	@Autowired
 	private CarroService carroService;
 
-	public CarroController() {
-		// TODO Auto-generated constructor stub
-	}
-	
 	@GetMapping
 	public ResponseEntity<List<Carro>>listarCarros(){
 		List<Carro>carros = carroService.getAll();
