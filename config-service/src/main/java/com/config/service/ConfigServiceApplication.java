@@ -12,4 +12,9 @@ public class ConfigServiceApplication {
 		SpringApplication.run(ConfigServiceApplication.class, args);
 	}
 
+	// git remote add origin https://github.com/rueb/microservicio.git
+	    // git checkout config-server
+	   // https://www.youtube.com/watch?v=icTg6iTqpUk
+	    // 2:46
+
 }

@@ -1,9 +1,0 @@
-package com.usuario.service.models;
-
-public class Carro {
-
-	public Carro() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

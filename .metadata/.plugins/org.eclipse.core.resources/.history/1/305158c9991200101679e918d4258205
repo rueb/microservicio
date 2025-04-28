@@ -1,9 +1,0 @@
-package com.usuario.service.configuration;
-
-public class RestTemplateConfig {
-
-	public RestTemplateConfig() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

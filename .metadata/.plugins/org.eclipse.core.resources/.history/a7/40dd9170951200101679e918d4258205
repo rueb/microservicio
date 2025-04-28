@@ -1,9 +1,0 @@
-package com.moto.service.services;
-
-public class MotoService {
-
-	public MotoService() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
